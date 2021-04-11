@@ -6,16 +6,21 @@ import Home from './Pages/HomePage/Home'
 import SignUp from './Pages/Signup/Signup'
 import Footer from './components/Footer/Footer';
 import Wallet from './components/Wallet/Wallet'
+
+import ScrollToTop from './components/ScrollToTop';
 import { Products } from './components';
+import About from './Pages/About/About';
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
+      <ScrollToTop />
       <Navbar/>
 
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/about' exact component={About} />
         <Route path='/products' exact component={Products} />
         <Route path='/wallet' exact component={Wallet} />
         <Route path='/sign-up' exact component={SignUp} />

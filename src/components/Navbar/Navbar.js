@@ -35,7 +35,7 @@ const Navbar = () => {
             <IconContext.Provider value={{color: "#5C23DB"}}>
                 <Nav>
                     <NavbarConatiner>
-                    <NavLogo to="/">
+                    <NavLogo to="/" onClick={handleClick} click={click}>
                         <NavIcon />
                         SecurePay
                     </NavLogo>
@@ -45,28 +45,28 @@ const Navbar = () => {
 
                     <NavMenu onClick={handleClick} click={click}>
                         <NavItem>
-                            <NavLinks to='/'>HOME</NavLinks>
+                            <NavLinks to='/about'>About</NavLinks>
                         </NavItem>
                         {/* <NavItem>
                             <NavLinks to='/services'>SERVICES</NavLinks>
                         </NavItem> */}
                         <NavItem>
-                            <NavLinks to='/products'>PRODUCTS</NavLinks>
+                            <NavLinks to='/products'>Products</NavLinks>
                         </NavItem>
-                        {/* <NavItem>
-                            <NavLinks to='/buy'>BUY AND SELL</NavLinks>
-                        </NavItem> */}
                         <NavItem>
-                            <NavLinks to='/wallet'>WALLET</NavLinks>
+                            <NavLinks to='/buy'>Buy</NavLinks>
                         </NavItem>
-                        {/* <NavItem>
-                            <NavLinks to='/defi'>SELL</NavLinks>
-                        </NavItem> */}
+                        <NavItem>
+                            <NavLinks to='/wallet'>Wallet</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='/defi'>DeFi</NavLinks>
+                        </NavItem>
 
                         <NavItemBtn>
                             {button ? (
                                 <NavBtnLink to="/sign-up">
-                                    <Button primary>SIGN IN</Button>
+                                    <Button primary>Sign Up</Button>
                                 </NavBtnLink>
                             ) : (
                                 <NavBtnLink to="/sign-up">

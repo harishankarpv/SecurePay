@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '../../globalStyles';
 // import { AiFillThunderbolt } from 'react-icons/ai';
-import {FaWallet} from 'react-icons/fa';
+import {FaWallet, FaEthernet} from 'react-icons/fa';
 import {GiReceiveMoney,GiPayMoney } from 'react-icons/gi';
 // import { GiFloatingCrystal } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
@@ -48,13 +48,11 @@ function Products() {
                   <FaWallet />
                 </ProductsCardIcon>
                 <ProductsCardPlan>Wallet </ProductsCardPlan>
-                {/* <ProductsCardCost>$299.99</ProductsCardCost> */}
+                
                 <ProductsCardLength>The key to your digital future</ProductsCardLength>
                 <ProductsCardFeatures>
                   <ProductsCardLength>Wallets give access to your funds and Ethereum applications. Only you should have access to your wallet.</ProductsCardLength>
-                  {/* <ProductsCardFeature>Wallets give access to your funds and Ethereum applications. Only you should have access to your wallet.</ProductsCardFeature> */}
-                  {/* <ProductsCardFeature>$50,000 Budget</ProductsCardFeature>
-                  <ProductsCardFeature>Lead Gen Analytics</ProductsCardFeature> */}
+                  
                 </ProductsCardFeatures>
                 <Button primary>Set Up Wallet</Button>
               </ProductsCardInfo>
@@ -62,17 +60,18 @@ function Products() {
             <ProductsCard to='/wallet'>
               <ProductsCardInfo>
                 <ProductsCardIcon>
-                  <GiPayMoney />
+                  <FaEthernet />
                 </ProductsCardIcon>
-                <ProductsCardPlan>Sell </ProductsCardPlan>
+
+                <ProductsCardPlan>DeFi </ProductsCardPlan>
                 {/* <ProductsCardCost>$999.99</ProductsCardCost> */}
-                {/* <ProductsCardLength>per month</ProductsCardLength> */}
+                <ProductsCardLength>A global, open alternative to the current financial system.</ProductsCardLength>
                 <ProductsCardFeatures>
-                  <ProductsCardFeature>Unlimited Users</ProductsCardFeature>
-                  <ProductsCardFeature>Unlimited Budget</ProductsCardFeature>
-                  <ProductsCardFeature>24/7 Support</ProductsCardFeature>
+                  <ProductsCardFeature>Lending Dapps</ProductsCardFeature>
+                  <ProductsCardFeature>Token Exchanges</ProductsCardFeature>
+                  <ProductsCardFeature>Trading Dapps</ProductsCardFeature>
                 </ProductsCardFeatures>
-                <Button primary>Get Started</Button>
+                <Button primary>Coming Soon</Button>
               </ProductsCardInfo>
             </ProductsCard>
           </ProductsContainer>

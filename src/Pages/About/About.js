@@ -1,12 +1,11 @@
 import React from 'react'
-import {homeObjOne, homeObjTwo} from './Data'
+import { homeObjTwo} from './Data'
 import { InfoSection, Products } from '../../components'
 
-
-const Home = () => {
+const About = () => {
     return (
         <>
-            <InfoSection {...homeObjOne}/>
+            {/* <InfoSection {...homeObjOne}/> */}
             <InfoSection {...homeObjTwo}/>
             {/* <InfoSection {...homeObjThree}/> */}
             <Products />
@@ -15,4 +14,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default About

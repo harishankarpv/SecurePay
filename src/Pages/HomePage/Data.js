@@ -25,7 +25,7 @@ export const homeObjTwo = {
     headline1: 'SecurePay connects you to the world of DeFi & Ethereum.',
     description:
       "SecurePay is a free, client-side interface helping you interact with the Ethereum blockchain. Our easy-to-use, open-source platform allows you to generate wallets, interact with smart contracts, and so much more. SecurePay allows you to import and manage all of the Ethereum accounts that you have control of.",
-    buttonLabel: 'See Our Products',
+    buttonLabel: 'Try Our Products',
     imgStart: 'true',
     img: require('../../images/ethereum2.svg').default,
     alt: 'Vault',
