@@ -1,8 +1,8 @@
 {
   "name": "securepay",
   "version": "0.1.0",
-  "description": "An Ethereum Marketplace",
-  "author": "harishankarpv99@gmail.com",
+  "description": "",
+  "author": "",
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
@@ -14,6 +14,7 @@
     "chai": "4.3.4",
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
+    "firebase": "^8.4.1",
     "react": "17.0.2",
     "react-bootstrap": "1.5.2",
     "react-dom": "^17.0.1",

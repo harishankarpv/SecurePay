@@ -7,7 +7,7 @@ import {
      Nav, NavbarConatiner ,NavLogo, NavIcon, MobileIcon, NavMenu, NavLinks, NavItem,
      NavItemBtn, NavBtnLink
     } from './Navbar.elements'
-
+import fire from '../Authentication/fire'
 
 
 const Navbar = () => {
@@ -15,6 +15,10 @@ const Navbar = () => {
     const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
+
+    const handleLogout = () => {
+        fire.auth().signOut();
+      };
 
     const showButton = () => {
         if(window.innerWidth <= 960){
@@ -65,13 +69,26 @@ const Navbar = () => {
 
                         <NavItemBtn>
                             {button ? (
-                                <NavBtnLink to="/sign-up">
-                                    <Button primary>Sign Up</Button>
+                                <NavBtnLink to="/log-in">
+                                    <Button primary>Log In</Button>
                                 </NavBtnLink>
                             ) : (
-                                <NavBtnLink to="/sign-up">
+                                <NavBtnLink to="/log-in">
                                     <Button  fontBig primary>
-                                        SIGN UP
+                                        Log In
+                                    </Button>
+                                </NavBtnLink>
+                            )}
+                        </NavItemBtn>
+                        <NavItemBtn>
+                            {button ? (
+                                <NavBtnLink to="/log-out">
+                                    <Button onClick={handleLogout} primary>Log Out</Button>
+                                </NavBtnLink>
+                            ) : (
+                                <NavBtnLink to="/log-out">
+                                    <Button onClick={handleLogout} fontBig primary>
+                                        Log Out
                                     </Button>
                                 </NavBtnLink>
                             )}

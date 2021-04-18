@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../../globalStyles';
 // import { AiFillThunderbolt } from 'react-icons/ai';
 import {FaWallet, FaEthernet} from 'react-icons/fa';
-import {GiReceiveMoney,GiPayMoney } from 'react-icons/gi';
+import {GiReceiveMoney } from 'react-icons/gi';
 // import { GiFloatingCrystal } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import {
@@ -14,7 +14,7 @@ import {
   ProductsCardInfo,
   ProductsCardIcon,
   ProductsCardPlan,
-  ProductsCardCost,
+  // ProductsCardCost,
   ProductsCardLength,
   ProductsCardFeatures,
   ProductsCardFeature
@@ -27,7 +27,7 @@ function Products() {
         <ProductsWrapper>
           <ProductsHeading>Our Products</ProductsHeading>
           <ProductsContainer>
-            <ProductsCard to='/sign-up'>
+            <ProductsCard to='/log-in'>
               <ProductsCardInfo>
                 <ProductsCardIcon>
                   <GiReceiveMoney />
